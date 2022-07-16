@@ -58,4 +58,11 @@ public class Student {
 			subject.displayTotal();
 			
 		}
+		@Override
+		public String toString() {
+			return "Student [rollno=" + rollno + ", name=" + name + ", dob=" + dob + ", classname=" + classname
+					+ ", section=" + section + ", subject=" + subject + "]";
+		}
+		
+		
 }

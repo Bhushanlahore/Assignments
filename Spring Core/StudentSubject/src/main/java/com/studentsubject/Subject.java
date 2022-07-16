@@ -7,15 +7,12 @@ public class Subject {
 	private int english;
 	private int hindi; 
 	private int science;
-	
-	
-	
+	private int total;
+
 	
 	public int getRollno() {
 		return rollno;
 	}
-
-
 
 
 	public void setRollno(int rollno) {
@@ -23,13 +20,9 @@ public class Subject {
 	}
 
 
-
-
 	public int getMaths() {
 		return maths;
 	}
-
-
 
 
 	public void setMaths(int maths) {
@@ -37,13 +30,9 @@ public class Subject {
 	}
 
 
-
-
 	public int getEnglish() {
 		return english;
 	}
-
-
 
 
 	public void setEnglish(int english) {
@@ -51,13 +40,9 @@ public class Subject {
 	}
 
 
-
-
 	public int getHindi() {
 		return hindi;
 	}
-
-
 
 
 	public void setHindi(int hindi) {
@@ -65,26 +50,18 @@ public class Subject {
 	}
 
 
-
-
 	public int getScience() {
 		return science;
 	}
-
-
 
 
 	public void setScience(int science) {
 		this.science = science;
 	}
 
-	
 
-
-	@Override
-	public String toString() {
-		return "Subject [rollno=" + rollno + ", maths=" + maths + ", english=" + english + ", hindi=" + hindi
-				+ ", science=" + science + "]";
+	public int getTotal() {
+		return maths+science+hindi+english;
 	}
 
 
@@ -96,4 +73,13 @@ public class Subject {
 		total = maths+science+hindi+english;
 		System.out.println("Total Marks: "+total);
 	}
+
+
+	@Override
+	public String toString() {
+		return "Subject [rollno=" + rollno + ", maths=" + maths + ", english=" + english + ", hindi=" + hindi
+				+ ", science=" + science + ", total=" + total + "]";
+	}
+	
+	
 }

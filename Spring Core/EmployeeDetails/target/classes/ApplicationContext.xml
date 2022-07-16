@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.1.xsd"
+>
+
+	<bean class="com.employeedetails.Employee" name="e1">
+	<property name="eid" value="1"/>
+	<property name="name" value="Bhushan Lahore"/>
+	<property name="salary" value="50000"/>
+	<property name="department" value="IT"/>
+	</bean>
+	
+		<bean class="com.employeedetails.Employee" name="e2">
+	<property name="eid" value="2"/>
+	<property name="name" value="Shubham Thakur"/>
+	<property name="salary" value="100000"/>
+	<property name="department" value="IT"/>
+	</bean>
+	
+		<bean class="com.employeedetails.Employee" name="e3">
+	<property name="eid" value="3"/>
+	<property name="name" value="Nikhil Thakre"/>
+	<property name="salary" value="30000"/>
+	<property name="department" value="HR"/>
+	</bean>
+	
+		<bean class="com.employeedetails.Employee" name="e4">
+	<property name="eid" value="4"/>
+	<property name="name" value="Neha devgan"/>
+	<property name="salary" value="10000"/>
+	<property name="department" value="HR"/>
+	</bean>
+	
+		<bean class="com.employeedetails.Employee" name="e5">
+	<property name="eid" value="5"/>
+	<property name="name" value="Jay shah"/>
+	<property name="salary" value="70000"/>
+	<property name="department" value="Facility"/>
+	</bean>
+</beans>
