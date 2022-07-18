@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.1.xsd"
+>
+
+	<bean class="com.item.Category" name="cat1">
+	<property name="cid" value="1"></property>
+	<property name="catname" value="Chochlate"></property>
+	</bean>
+	
+	<bean class="com.item.Item" name="i1">
+	<property name="itemid" value="1"></property>
+	<property name="itemname" value="Kitkat"></property>
+	<property name="qty" value="5"></property>
+	<property name="price" value="20"></property>
+	<property name="category" ref="cat1" ></property>
+	</bean>
+	
+		<bean class="com.item.Customer" name="c1">
+	<property name="custid" value="1"></property>
+	<property name="name" value="Bhushan"></property>
+	<property name="item" ref="i1"></property>
+	</bean>
+	
+		<bean class="com.item.Category" name="cat2">
+	<property name="cid" value="2"></property>
+	<property name="catname" value="Ice-Cream"></property>
+	</bean>
+	
+	<bean class="com.item.Item" name="i2">
+	<property name="itemid" value="2"></property>
+	<property name="itemname" value="Dishaw Icecream"></property>
+	<property name="qty" value="2"></property>
+	<property name="price" value="50"></property>
+	<property name="category" ref="cat2" ></property>
+	</bean>
+	
+	<bean class="com.item.Customer" name="c2">
+	<property name="custid" value="1"></property>
+	<property name="name" value="Bhushan"></property>
+	<property name="item" ref="i2"></property>
+	</bean>
+	
+
+</beans>
